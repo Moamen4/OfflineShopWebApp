@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="css.css">
+    <title>shop</title>
+    
+</head>
+<body>
+<div id="all">
+    <div id="head">
+        <h2>shop egypt</h2>
+        <p> product management system</p>
+    </div>
+    <div id="inputs">
+        <input placeholder="title" type="text" id="title">
+        <div id="pr">
+            <input onkeyup="getTotal()" type="number" id="price"  placeholder="price"     >
+            <input onkeyup="getTotal()"  type="number" id="taxes"placeholder="taxes">
+            <input onkeyup="getTotal()"  type="number" id="ads"placeholder="ads">
+            <input onkeyup="getTotal()"  type="number" id="discount"placeholder="discount">
+            <small  id="total"></small>
+        </div>
+        <input placeholder="count" type="number" id="count">
+        <input placeholder="category" type="text" id="category">
+        <button id="submit">create</button>
+    </div>
+    <div id="outputs">
+        <div id="search">
+            <input onkeyup="searchdata(this.value)" type="text" placeholder="search" id="sr">
+            <div id="btn">
+                <button   onclick="getsearchmood(this.id)"    id="st">search by title</button>
+               <button    onclick="getsearchmood(this.id)"   id="sc"> search by category</button>
+            </div>
+        </div>
+        <div id="deleteall"></div>
+        <table>
+            <tr>
+                <th>id</th>
+                <th>title</th>
+                <th>price</th>
+                <th>taxes</th>
+                <th>ads</th>
+                <th>discount</th>
+                <th>total</th>
+                <th>category</th>
+                <th>update</th>
+                <th>delete</th>
+
+            </tr>
+            <tbody id="tbody">
+
+            </tbody>
+            
+                       
+
+                 </table>
+    </div>
+</div>
+    <script src="js.js"></script>
+</body>
+</html>
